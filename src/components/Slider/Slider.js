@@ -38,13 +38,8 @@ function Slider() {
     };
   return (
     <div
-      className="bg-theme-bg border-b-primary border-black dark:border-gray dark:border-b-primary rounded list-none box-content container mx-auto"
+      className="bg-theme-bg border-b-primary border-black dark:border-gray dark:border-b-primary rounded list-none box-content container mx-auto mb-20"
     >
-        <h1 
-            className="text-3xl mb-10 hover:text-cyan-700 transition-colors duration-500 delay-200" >
-            Splide Slider
-        </h1>
-
         <Splide 
             aria-label="My Favorite Images" 
             className="splide__wrapper" 
@@ -54,7 +49,7 @@ function Slider() {
             {
                 SLIDES_DATA.map((slider,index) => {
                     return (
-                        <SplideSlide className="image__wrapper -webkit-text-center text-center pt-20  object-contain" key={index}>
+                        <SplideSlide className="image__wrapper -webkit-text-center text-center object-contain" key={index}>
                             <img className="pt-2  w-full h-full" src={slider.src} alt='slide 1'  />
                         </SplideSlide>
                     );

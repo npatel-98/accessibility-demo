@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from './components/Header/Header';
+import Accordion from './components/Accordion/Accordion';
+import Slider from './components/Slider/Slider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
