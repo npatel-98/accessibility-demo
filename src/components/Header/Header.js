@@ -8,9 +8,7 @@ const Header = () => {
             <div className='flex flex-row justify-between items-center container mx-auto bg-indigo-200 list-none p-5' >
 
                 <div className='header ml-4'>
-                    <a className='mx-4'>
-                        <img src={headerLogo} height={60} width={180} alt='slide 1 image' objectfit="cover"/>
-                    </a>
+                    <img src={headerLogo} height={60} width={180} alt='slide 1' objectfit="cover"/>
                 </div>
 
                 <nav className='flex flex-row justify-end mr-4'>
