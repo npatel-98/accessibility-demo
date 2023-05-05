@@ -38,7 +38,7 @@ const Accordion = () => {
 
     const clickHandleraccordion = (index) => {
         setCurrentAccordion(index);
-        if(currentAccordion == index){
+        if(currentAccordion === index){
             setIsOpen(!isOpen)
         }else{
             setIsOpen(isOpen)
@@ -53,24 +53,25 @@ const Accordion = () => {
             {DATA.map((item, index) => {
             return (
                 <div className="w-9/12 mb-6" key={index}>
-                <button
-                    onClick = { () => clickHandleraccordion(index) }
-
+                <div
+                onClick = { () => clickHandleraccordion(index)}
                     className={className('accordion flex flex-row justify-between w-full p-4 bg-indigo-400', {
-                    'bg-indigo-200': isOpen && currentAccordion == index ,
+                    'bg-indigo-200': isOpen && currentAccordion === index ,
                     'bg-indigo-400': !isOpen,
                     })}
                 >
                     {item?.fields?.question?.value}
-                </button>
+                    <button className=" text-2xl ">{isOpen && currentAccordion === index  ? " - " : " + "}</button>
+                </div>
 
                 <div 
                     className={className(`accordion_content ac_${index} p-4 bg-indigo-200`, {
-                    'hidden': !isOpen || currentAccordion != index,
-                    'shown': (isOpen && currentAccordion == index)
+                    'hidden': !isOpen || currentAccordion !== index,
+                    'shown': (isOpen && currentAccordion === index)
                     })}
                 >
                     <p>{item.fields.answer}</p>
+                    {/* <a href='#'>vraj</a> */}
                 </div>
 
                 </div>
