@@ -1,9 +1,9 @@
 import './App.css';
 import Slider from './components/Slider/Slider';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from './components/Header/Header';
 import Accordion from './components/Accordion/Accordion';
 import Home from './components/Home/Home';
+import Form from './components/Form/Form';
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/slider" element={<Slider />} />
         <Route path="/accordion" element={<Accordion />} />
+        <Route path="/form" element={<Form />} />
       </Routes>
     </BrowserRouter>
 

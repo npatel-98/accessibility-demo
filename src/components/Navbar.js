@@ -27,6 +27,10 @@ export const menuItems = [
         title: 'Accordion',
         url: '/accordion',
     },
+    {
+        title: 'Form',
+        url: '/form',
+    },
 ];
 
 function Navbar() {

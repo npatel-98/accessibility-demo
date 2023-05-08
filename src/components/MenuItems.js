@@ -12,6 +12,7 @@ const MenuItems = ({ items }) => {
                     type="button" 
                     aria-haspopup="menu"
                     className="mx-4 text-xl text-neutral-900 font-bold hover:underline underline-offset-8 focus:outline-dashed-3 outline-indigo-700"
+                    aria-expanded={dropdown ? "true" : "false"}
                     onClick={() => setDropdown((prev) => !prev)}
                     >
                         {items.title}{' '}

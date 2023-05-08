@@ -8,7 +8,7 @@ const Header = () => {
 // for the header we use aria-expand concepts 
 
     return (
-        <>
+        <header>
             <div className=' bg-indigo-200 list-none p-5 mb-20'>
 
                 <div className="header__wrapper container mx-auto flex flex-row justify-between items-center">
@@ -18,9 +18,8 @@ const Header = () => {
                     <Navbar />
                 </div>
             </div>
-
             <Outlet />
-        </>
+        </header>
     )
 }
 export default Header;
