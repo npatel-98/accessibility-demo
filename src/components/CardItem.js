@@ -2,16 +2,24 @@ import React from 'react'
 
 function CardItem() {
   return (
-    <div className='col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-4 flex flex-col bg-white' tabIndex='0'>
-        <img src=" https://thumbs.dreamstime.com/b/vector-illustration-avatar-dummy-logo-collection-image-icon-stock-isolated-object-set-symbol-web-137160339.jpg" alt='card component' width="200" height='160' className='w-full rounded' />
-        <div className='my-4 font-semibold text-lg text-center'>
-            <h3>Card Title</h3>
-        </div>
-        <div className='flex my-2 mx-auto'>
-            <button type='button' className=' bg-green-400 py-2 px-3 hover:bg-green-300'>Learn More</button>
-        </div>
+    <div className='col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-4 max-w-lg rounded overflow-hidden shadow-lg' tabIndex='0'>
+      <img src="https://appline-tailwind.preview.uideck.com/images/blog-01.jpg" alt='Sunset in the mountains' className='w-full rounded' />
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+        <p class="text-gray-700 text-base">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+        </p>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+      </div>
+      <div className='px-6 pt-4 pb-2 '>
+        <button type='button' className=' rounded-md bg-indigo-400 py-[10px] px-9 text-base font-medium text-white hover:bg-indigo-300 focus:border-blue-400'>Learn More</button>
+      </div>
     </div>
   )
 }
 
-export default CardItem
+export default CardItem;
