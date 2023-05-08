@@ -31,6 +31,10 @@ export const menuItems = [
         title: 'Form',
         url: '/form',
     },
+    {
+        title: 'Table',
+        url: '/table',
+    }
 ];
 
 function Navbar() {

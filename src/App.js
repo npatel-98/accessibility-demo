@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Accordion from './components/Accordion/Accordion';
 import Home from './components/Home/Home';
 import Form from './components/Form/Form';
+import Table from './components/Table/Table';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/slider" element={<Slider />} />
         <Route path="/accordion" element={<Accordion />} />
+        <Route path="/table" element={<Table />} /> 
         <Route path="/form" element={<Form />} />
       </Routes>
     </BrowserRouter>
