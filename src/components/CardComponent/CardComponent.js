@@ -4,7 +4,7 @@ import CardItem from '../CardItem'
 function CardComponent() {
   return (
     <>
-    <div className='mt-[86px] py-[100px] relative' id='main-content'>
+    <div className='py-[100px] relative' id='main-content'>
     <div className="container mx-auto">
         <div className="grid grid-cols-12 gap-5 items-center">
             <CardItem />

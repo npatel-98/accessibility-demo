@@ -2,7 +2,7 @@ import React from 'react'
 
 function Form() {
     return (
-        <section id='support' className='pY-[70px]'>
+        <section id='support' className=' py-16'>
             {/* title */}
             <div className='container mx-auto'>
                 <div className='mx-auto mb-10 max-w-[690px] text-center'>

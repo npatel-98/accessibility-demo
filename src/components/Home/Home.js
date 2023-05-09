@@ -1,6 +1,7 @@
 import React from 'react'
 import Accordion from '../Accordion/Accordion'
 import CardComponent from '../CardComponent/CardComponent';
+import Footer from '../Footer/Footer';
 import Form from '../Form/Form';
 import Header from '../Header/Header'
 import OrderList from '../OrderList/OrderList';
@@ -37,9 +38,10 @@ const Home = () => {
       <Header />
       <Accordion />
       <Slider />
-      <Form />
       <OrderList />
       <CardComponent />
+      <Form />
+      <Footer />
     </>
   )
 }
