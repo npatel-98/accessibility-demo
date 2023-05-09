@@ -2,7 +2,7 @@ import React from 'react'
 
 function OrderList() {
     return (
-        <section id='orderList' className='pt-[100px] pb-[110px]'>
+        <section id='orderList' className='pt-[80px] pb-[60px]'>
             <div className='container mx-auto'>
                 <ol class="space-y-4 text-gray-500 list-decimal list-inside dark:text-gray-400">
                     <li>
