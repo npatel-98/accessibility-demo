@@ -40,7 +40,7 @@ export const menuItems = [
 function Navbar() {
     return (
         <nav className=''>
-            <ul className='flex flex-wrap'>
+            <ul className='flex flex-wrap' role="menubar">
                 {menuItems.map((menu, index) => {
                     return <MenuItems items={menu} key={index} />;
                 })}

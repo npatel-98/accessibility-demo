@@ -1,12 +1,31 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Dropdown from './Dropdown';
 import className from 'classnames';
 
 const MenuItems = ({ items }) => {
     const [dropdown, setDropdown] = useState(false);
+    const vv = useRef(null);
+
+    useEffect(() => {
+        const checkIfClickedOutside = e => {
+          // If the menu is open and the clicked target is not within the menu,
+          // then close the menu
+          if (dropdown && vv.current && !vv.current.contains(e.target)) {
+            setDropdown(false);
+          }
+        }
+    
+        document.addEventListener("mousedown", checkIfClickedOutside)
+    
+        return () => {
+          // Cleanup the event listener
+          document.removeEventListener("mousedown", checkIfClickedOutside)
+        }
+      }, [dropdown])
+
     return (
-        <li className='hover:cursor-pointer'>
+        <li className='hover:cursor-pointer' role="menuitem">
             {items.submenu ? (
                 <>
                 {/* flex justify-center items-center */}
@@ -32,11 +51,12 @@ const MenuItems = ({ items }) => {
                     <Dropdown className={className('',{
                         'hidden': !dropdown,
                         'shown': dropdown,
-                    })} submenus={items.submenu} dropdown={dropdown}/>
+                    })} submenus={items.submenu} dropdown={dropdown} vv={vv}/>
 
                 </>
             ) : (
                 <Link
+                    role="button"
                     to={items.url}
                     className="mx-4 text-lg text-neutral-900 font-bold hover:text-indigo-400  focus:text-indigo-400">
                     {items.title}

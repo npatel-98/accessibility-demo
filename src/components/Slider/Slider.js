@@ -7,25 +7,25 @@ function Slider() {
             id:"1",
             title: "slide 1",
             src: "https://wallpaperaccess.com/full/441330.jpg",
-            alt: "sd",
+            alt: "sd_1",
         },
         {
             id:"2",
             title: "slide 2",
             src: "https://www.nasa.gov/sites/default/files/styles/ubernode_alt_horiz/public/thumbnails/image/transp_img0056_small.jpg",
-            alt: "sd",
+            alt: "sd_2",
         },
         {
             id:"3",
             title: "slide 3",
             src: "https://www.nasa.gov/sites/default/files/styles/ubernode_alt_horiz/public/thumbnails/image/70hc958_banner.jpg",
-            alt: "sd",
+            alt: "sd_3",
         },
         {
             id:"4",
             title: "slide 4",
             src: "https://www.nasa.gov/sites/default/files/styles/ubernode_alt_horiz/public/thumbnails/image/1es_agn_aurore.jpg",
-            alt: "sd",
+            alt: "sd_4",
         },
         
     ];
@@ -50,7 +50,7 @@ function Slider() {
                 SLIDES_DATA.map((slider,index) => {
                     return (
                         <SplideSlide className="image__wrapper -webkit-text-center text-center object-contain" key={index}>
-                            <img className="pt-2  w-full h-full" src={slider.src} alt='slide 1'  />
+                            <img className="pt-2  w-full h-full" src={slider.src} alt={slider.alt}  />
                         </SplideSlide>
                     );
                 })
