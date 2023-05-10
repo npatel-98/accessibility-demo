@@ -5,6 +5,9 @@ import Accordion from './components/Accordion/Accordion';
 import Home from './components/Home/Home';
 import Form from './components/Form/Form';
 import Table from './components/Table/Table';
+import Dashboard from './components/Dashboard/Dashboard';
+import Everything from './components/Everything/Everything';
+import Hero from './components/Hero/Hero';
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
           <Route path="/accordion" element={<Accordion />} />
           <Route path="/table" element={<Table />} /> 
           <Route path="/form" element={<Form />} />
+          <Route path="/dash" element={<Dashboard />} />
+          <Route path="/everything" element={<Everything />} />
+          <Route path="/hero" element={<Hero />} />
         </Routes>
       </BrowserRouter>
     </>
