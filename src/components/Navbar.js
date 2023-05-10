@@ -39,8 +39,8 @@ export const menuItems = [
 
 function Navbar() {
     return (
-        <nav className='flex flex-row justify-end mr-4'>
-            <ul className='flex'>
+        <nav className=''>
+            <ul className='flex flex-wrap'>
                 {menuItems.map((menu, index) => {
                     return <MenuItems items={menu} key={index} />;
                 })}
