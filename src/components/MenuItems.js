@@ -10,24 +10,23 @@ const MenuItems = ({ items }) => {
             {items.submenu ? (
                 <>
                 {/* flex justify-center items-center */}
-                    <div className='dropdown relative text-neutral-900 hover:text-indigo-400'>
+                    <div className='dropdown relative text-neutral-900 hover:text-indigo-400 flex flex-row items-center'>
                         <Link 
                             type="button" 
                             aria-haspopup="menu"
-                            className="mx-4 text-lg font-bold  whitespace-nowrap focus:text-indigo-400"
+                            className="mx-4 mr-2 text-lg font-bold whitespace-nowrap focus:text-indigo-400"
                             aria-expanded={dropdown ? "true" : "false"}
                             onClick={() => setDropdown((prev) => !prev)}
                         >
-                            {items.title}{''}
-                            <span className="pl-3 focus:text-indigo-400"
-                                aria-expanded={dropdown ? "true" : "false"}
-                                onClick={() => setDropdown((prev) => !prev)}
-                            >
-                                <svg class="fill-current h-4 w-4 ml-2" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 10l5 5 5-5z" />
-                                </svg>
-                            </span>
+                            {items.title}
                         </Link>
+                        <span className="pr-3 pb-1 focus:text-indigo-400 active:text-in whitespace-nowrap text-left"
+                            onClick={() => setDropdown((prev) => !prev)}
+                        >
+                            <svg className="fill-current h-4 w-4 ml-2" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10l5 5 5-5z" />
+                            </svg>
+                        </span>
                     </div>
                     
                     <Dropdown className={className('',{
