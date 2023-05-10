@@ -6,7 +6,7 @@ function Footer() {
         <footer>
             <div className='bg-[#F8FAFB] pt-[95px] pb-1' id='footer_component'>
                 <div className='container mx-auto'>
-                    <div className='-mx-4 flex flex-wrap'>
+                    <div className='mx-4 flex flex-wrap'>
                         <div className="w-full px-4 lg:w-4/12 xl:w-5/12">
                             <div className="mb-11 max-w-[320px]" >
                                 <a href="#footer_component" className="mb-8 inline-block">

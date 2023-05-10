@@ -12,7 +12,7 @@ const Header = () => {
 
             <div className=' list-none mb-20'>
 
-                <div className="header__wrapper container mx-auto flex flex-row justify-between items-center">
+                <div className="header__wrapper container mx-auto flex flex-row justify-between items-center flex-wrap">
                     <div className='header ml-4' tabIndex="0">
                         <img src={HeaderLogo} height={180} width={160} className=" fill-black" alt='navigation logo' objectfit="cover"/>
                     </div>
