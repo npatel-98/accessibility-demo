@@ -35,6 +35,7 @@ const Accordion = () => {
   const [currentAccordion, setCurrentAccordion] = useState(0);
   const [activeAccordionClass, setActiveAccordionClass] = useState();
   const clickHandleraccordion = (index) => {
+
     setCurrentAccordion(index);
     if (currentAccordion === index) {
       setIsOpen(!isOpen);
@@ -95,7 +96,7 @@ const Accordion = () => {
                     );
                 })
             }
-        {/* <button class="ease-in duration-300 bg-indigo-300 p-3 hover:bg-red-400">Button A</button> */}
+        {/* <button className="ease-in duration-300 bg-indigo-300 p-3 hover:bg-red-400">Button A</button> */}
         </div>
     </div>
   );

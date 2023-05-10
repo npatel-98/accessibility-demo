@@ -139,7 +139,7 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div role="contentinfo" tabindex="-1" id="example-footer" className='text-center'>
+                    <div role="contentinfo" tabIndex="-1" id="example-footer" className='text-center'>
                         &copy; 2021 Site Name
                     </div>
                 </div>
