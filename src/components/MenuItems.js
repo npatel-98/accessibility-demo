@@ -25,7 +25,7 @@ const MenuItems = ({ items }) => {
       }, [dropdown])
 
     return (
-        <li className='hover:cursor-pointer'>
+        <li className='hover:cursor-pointer' role="menuitem">
             {items.submenu ? (
                 <>
                 {/* flex justify-center items-center */}
@@ -56,6 +56,7 @@ const MenuItems = ({ items }) => {
                 </>
             ) : (
                 <Link
+                    role="button"
                     to={items.url}
                     className="mx-4 text-lg text-neutral-900 font-bold hover:text-indigo-400  focus:text-indigo-400">
                     {items.title}
