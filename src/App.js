@@ -8,16 +8,19 @@ import Table from './components/Table/Table';
 
 function App() {
   return (
+    <>
+      <div></div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/slider" element={<Slider />} />
+          <Route path="/accordion" element={<Accordion />} />
+          <Route path="/table" element={<Table />} /> 
+          <Route path="/form" element={<Form />} />
+        </Routes>
+      </BrowserRouter>
+    </>
     
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/slider" element={<Slider />} />
-        <Route path="/accordion" element={<Accordion />} />
-        <Route path="/table" element={<Table />} /> 
-        <Route path="/form" element={<Form />} />
-      </Routes>
-    </BrowserRouter>
 
   );
 }

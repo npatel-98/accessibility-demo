@@ -27,14 +27,14 @@ export const menuItems = [
         title: 'Accordion',
         url: '/accordion',
     },
-    {
-        title: 'Form',
-        url: '/form',
-    },
-    {
-        title: 'Table',
-        url: '/table',
-    }
+    // {
+    //     title: 'Form',
+    //     url: '/form',
+    // },
+    // {
+    //     title: 'Table',
+    //     url: '/table',
+    // }
 ];
 
 function Navbar() {
