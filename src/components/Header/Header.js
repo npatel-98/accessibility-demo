@@ -13,13 +13,13 @@ const Header = () => {
             <div className='list-none'>
 
                 <div className="header__wrapper container mx-auto flex flex-row justify-between items-center flex-wrap">
-                    <div className='header ml-4' tabIndex="0" role="button" href="/"> 
-                        <Link
-                            role="button"
-                            to="/">
-                                <img src={HeaderLogo} height={180} width={160} className=" fill-black cursor-pointer" alt='navigation logo' objectfit="cover"/>
-                        </Link>
-                    </div>
+                    <Link
+                        role="button"
+                        to="/"
+                        tabIndex="0"
+                    >
+                        <img src={HeaderLogo} height={180} width={160} className=" fill-black cursor-pointer" alt='navigation logo' objectfit="cover"/>
+                    </Link>
                     <Navbar />
                 </div>
             </div>

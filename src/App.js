@@ -10,10 +10,18 @@ import Hero from './components/Hero/Hero';
 import Header from './components/Header/Header';
 
 function App() {
-  
+  const SkipToContent = <div id="skip-to-content" className='relative' tabIndex={-1}>
+    <a 
+      href="#main-content" 
+      className='relative whitespace-nowrap text-black text-sm h-[33px] visually-hidden'
+    >
+      Skip to Content
+    </a>
+  </div>
 
   return (
     <>
+      {SkipToContent}
       <Header />
       <Routes>
         <Route path="/" element={<Hero />} />
