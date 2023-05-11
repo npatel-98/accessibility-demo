@@ -15,14 +15,14 @@ function App() {
       <div></div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Hero />} />
+          <Route path="/list" element={<Home />} />
           <Route path="/slider" element={<Slider />} />
           <Route path="/accordion" element={<Accordion />} />
           <Route path="/table" element={<Table />} /> 
           <Route path="/form" element={<Form />} />
           <Route path="/dash" element={<Dashboard />} />
           <Route path="/everything" element={<Everything />} />
-          <Route path="/hero" element={<Hero />} />
         </Routes>
       </BrowserRouter>
     </>
