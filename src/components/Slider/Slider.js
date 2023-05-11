@@ -33,16 +33,16 @@ function Slider() {
         perPage: 2,
         perMove: 1,
         rewind: true, // sets to initial slide after the last slide
-        gap: 20,
-        padding: { left: 15, right: 15}
+        gap: 15,
+        padding: { left: 10, right: 10}
     };
   return (
     <div
-      className="bg-theme-bg border-b-primary border-black dark:border-gray dark:border-b-primary rounded list-none box-content container mx-auto mb-20"
+      className=" border-b-primary border-black dark:border-gray dark:border-b-primary rounded list-none box-content container mx-auto mb-20"
     >
         <Splide 
             aria-label="My Favorite Images" 
-            className="splide__wrapper" 
+            className="splide__wrapper px-3 md:px-12" 
             options={options}
         >
 

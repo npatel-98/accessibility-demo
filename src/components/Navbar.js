@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import {useNavigate} from 'react-router-dom';
+
 import MenuItems from './MenuItems';
 export const menuItems = [
     {
@@ -6,46 +8,76 @@ export const menuItems = [
         url: '/tabs',
         submenu: [
             {
-                title: 'web design',
-                url: 'web-design',
+                title: 'Web design',
+                url: '#',
             },
             {
-                title: 'web development',
-                url: 'web-dev',
+                title: 'Web development',
+                url: '#',
             },
             {
                 title: 'SEO',
-                url: 'seo',
+                url: '#',
             },
         ],
     },
     {
-        title: 'Image Slider',
+        title: 'Home',
+        url: '/',
+    },
+    {
+        title: 'Explore',
+        url: '/list',
+    },
+    {
+        title: 'Gallery',
         url: '/slider',
     },
     {
-        title: 'Accordion',
+        title: 'FAQs',
         url: '/accordion',
     },
     {
-        title: 'Form',
+        title: 'Contact Us',
         url: '/form',
     },
     {
-        title: 'Table',
+        title: 'Data',
         url: '/table',
+    },
+    {
+        title: 'All at Glance',
+        url: '/everything',
     }
 ];
 
 function Navbar() {
+
+    const navigate = useNavigate();
+    const goBack = () => {
+        navigate(-1);
+    }
+
+    const BackButton = <button 
+        className='p-2 border text-left bg-transparent rounded shadow 
+        text-neutral-900 hover:text-neutral-900 hover:shadow-lg hover:bg-indigo-400 py-1 px-3 border border-transparent hover:border-indigo-400 hover: hover:cursor-pointer'
+        onClick={() => goBack()}
+        >
+        Back
+    </button>
+
     return (
-        <nav className=''>
-            <ul className='flex flex-wrap' role="menubar">
-                {menuItems.map((menu, index) => {
-                    return <MenuItems items={menu} key={index} />;
-                })}
-            </ul>
-        </nav>
+        <>
+            <nav className=''>
+                <ul className='flex flex-wrap' role="menubar">
+                    {menuItems.map((menu, index) => {
+                        return <MenuItems items={menu} key={index} />;
+                    })}
+                </ul>
+            </nav>
+            {/* {BackButton} */}
+            
+        </>
     )
 }
 

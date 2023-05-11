@@ -4,7 +4,7 @@ import FooterLogo from '../../images/HZTL_grey_workshop.png'
 function Footer() {
     return (
         <footer>
-            <div className='bg-[#F8FAFB] pt-[95px] pb-1' id='footer_component'>
+            <div className='primaryColor pt-[95px] pb-1' id='footer_component'>
                 <div className='container mx-auto'>
                     <div className='mx-4 flex flex-wrap'>
                         <div className="w-full px-4 lg:w-4/12 xl:w-5/12">

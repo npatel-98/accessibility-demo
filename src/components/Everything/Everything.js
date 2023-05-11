@@ -3,21 +3,19 @@ import Accordion from '../Accordion/Accordion'
 import CardComponent from '../CardComponent/CardComponent';
 import Footer from '../Footer/Footer';
 import Form from '../Form/Form';
-import Header from '../Header/Header'
 import OrderList from '../OrderList/OrderList';
 import Slider from '../Slider/Slider'
 
 const Everything = () => {
   return (
-    <>
-      <Header />
-      <Accordion />
+    <div className=''>
+      <CardComponent />
       <Slider />
       <OrderList />
-      <CardComponent />
+      <Accordion />
       <Form />
       <Footer />
-    </>
+    </div>
   )
 }
 

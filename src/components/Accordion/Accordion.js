@@ -40,7 +40,7 @@ const Accordion = () => {
     setCurrentAccordion(i);
   }
   return (
-    <div className="accordion__component bg-theme-bg border-b-primary border-black dark:border-gray dark:border-b-primary p-2 rounded list-none mb-20 flex flex-col justify-center items-center">
+    <div className="accordion__component bg-theme-bg border-b-primary border-black dark:border-gray dark:border-b-primary p-2 rounded list-none mb-20 flex flex-col justify-center items-center h-full">
 
         {/* Accordion Titles */}
         <div className="py-4 w-9/12 px-8 mb-12 text-center ">
