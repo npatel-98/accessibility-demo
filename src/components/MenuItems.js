@@ -8,21 +8,20 @@ const MenuItems = ({ items }) => {
     const vv = useRef(null);
 
     useEffect(() => {
-        const checkIfClickedOutside = e => {
-          // If the menu is open and the clicked target is not within the menu,
-          // then close the menu
-          if (dropdown && vv.current && !vv.current.contains(e.target)) {
-            setDropdown(false);
-          }
-        }
-    
         document.addEventListener("mousedown", checkIfClickedOutside)
-    
         return () => {
           // Cleanup the event listener
           document.removeEventListener("mousedown", checkIfClickedOutside)
         }
       }, [dropdown])
+
+      const checkIfClickedOutside = e => {
+        // If the menu is open and the clicked target is not within the menu,
+        // then close the menu
+        if (dropdown && vv.current && !vv.current.contains(e.target)) {
+          setDropdown(false);
+        }
+      }
 
     return (
         <li className='hover:cursor-pointer' role="menuitem">
@@ -33,7 +32,7 @@ const MenuItems = ({ items }) => {
                         <Link 
                             type="button" 
                             aria-haspopup="menu"
-                            className="mx-4 mr-2 text-lg font-bold whitespace-nowrap focus:text-indigo-400"
+                            className="mx-4 mr-2 text-lg font-bold whitespace-nowrap focus:text-indigo-400 relative"
                             aria-expanded={dropdown ? "true" : "false"}
                             onClick={() => setDropdown((prev) => !prev)}
                         >

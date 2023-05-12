@@ -1,5 +1,5 @@
-import React from 'react';
-import {useNavigate} from 'react-router-dom';
+import React, { useState } from 'react';
+// import {useNavigate} from 'react-router-dom';
 
 import MenuItems from './MenuItems';
 export const menuItems = [
@@ -53,25 +53,24 @@ export const menuItems = [
 
 function Navbar() {
 
-    const navigate = useNavigate();
-    const goBack = () => {
-        navigate(-1);
-    }
+    // const navigate = useNavigate();
+    // const goBack = () => {
+    //     navigate(-1);
+    // }
 
-    const BackButton = <button 
-        className='p-2 border text-left bg-transparent rounded shadow 
-        text-neutral-900 hover:text-neutral-900 hover:shadow-lg hover:bg-indigo-400 py-1 px-3 border border-transparent hover:border-indigo-400 hover: hover:cursor-pointer'
-        onClick={() => goBack()}
-        >
-        Back
-    </button>
-
+    // const BackButton = <button 
+    //     className='p-2 border text-left bg-transparent rounded shadow 
+    //     text-neutral-900 hover:text-neutral-900 hover:shadow-lg hover:bg-indigo-400 py-1 px-3 border border-transparent hover:border-indigo-400 hover: hover:cursor-pointer'
+    //     onClick={() => goBack()}
+    //     >
+    //     Back
+    // </button>
     return (
         <>
-            <nav className=''>
+            <nav>
                 <ul className='flex flex-wrap' role="menubar">
                     {menuItems.map((menu, index) => {
-                        return <MenuItems items={menu} key={index} />;
+                        return <MenuItems items={menu} key={index}/>;
                     })}
                 </ul>
             </nav>
