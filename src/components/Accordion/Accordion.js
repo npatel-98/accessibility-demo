@@ -63,7 +63,6 @@ const Accordion = () => {
                                 className={className(
                                 "accordion flex flex-row justify-between w-full p-4 text-md font-bold",)}
                                 id={`accordion_title_${index}`}
-                                role="tab"
                             >
                                 {item?.fields?.question?.value}
                                 {/* svg to place here */}
@@ -81,6 +80,7 @@ const Accordion = () => {
                                 }
                                 )}
                                 aria-labelledby={`accordion_title_${index}`}
+                                role="tab"
                             >
                                 <p>{item.fields.answer}</p>
                             </div>
