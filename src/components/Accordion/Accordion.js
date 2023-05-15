@@ -56,7 +56,7 @@ const Accordion = () => {
                         <li
                         className="accordions w-full border-b-2 border-white-300 divide-y-2 divide-slate-200 last:border-b-0"
                         key={index}
-                        role="tablist"
+                        
                         >
                             <div
                                 onClick={() => toggleClick(index)}
