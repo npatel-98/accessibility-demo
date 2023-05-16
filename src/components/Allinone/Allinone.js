@@ -1,13 +1,12 @@
 import React from "react";
+import Layout from "../Layout/Layout";
 import Accordion from "../Accordion/Accordion";
 import CardComponent from "../CardComponent/CardComponent";
-import Footer from "../Footer/Footer";
 import Form from "../Form/Form";
 import OrderList from "../OrderList/OrderList";
 import Slider from "../Slider/Slider";
-import Layout from "../Layout/Layout";
 
-const Everything = () => {
+const Allinone = () => {
   return (
     <Layout>
       <CardComponent />
@@ -19,4 +18,4 @@ const Everything = () => {
   );
 };
 
-export default Everything;
+export default Allinone;
