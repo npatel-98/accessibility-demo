@@ -27,19 +27,19 @@ export const menuItems = [
     },
     {
         title: 'Explore',
-        url: '/list',
+        url: '/explore',
     },
     {
         title: 'Gallery',
-        url: '/slider',
+        url: '/gallery',
     },
     {
         title: 'FAQs',
-        url: '/accordion',
+        url: '/faq',
     },
     {
         title: 'Contact Us',
-        url: '/form',
+        url: '/contact',
     },
     {
         title: 'Data',
@@ -47,7 +47,7 @@ export const menuItems = [
     },
     {
         title: 'All at Glance',
-        url: '/everything',
+        url: '/all-at-glance',
     }
 ];
 

@@ -5,6 +5,7 @@ import CardComponent from "../CardComponent/CardComponent";
 import Form from "../Form/Form";
 import OrderList from "../OrderList/OrderList";
 import Slider from "../Slider/Slider";
+import Table from "../Table/Table";
 
 const Allinone = () => {
   return (
@@ -13,6 +14,7 @@ const Allinone = () => {
       <Slider />
       <OrderList />
       <Accordion />
+      <Table />
       <Form />
     </Layout>
   );
