@@ -19,7 +19,7 @@ function Footer() {
               <div className="-mx-4 flex flex-wrap">
                 <div className="w-full px-4 sm:w-1/2 md:w-2/12 lg:w-2/12">
                   <div className="footer_col mb-11">
-                    <p className="mb-8 text-[22px] font-medium text-black">Home</p>
+                    <h3 className="mb-8 text-[22px] font-medium text-black">Home</h3>
                     <ul className="footer_elements space-y-[10px]">
                       <li>
                         <a href="#" className="inline-block text-base text-slate-400 hover:text-indigo-400">
@@ -46,7 +46,7 @@ function Footer() {
                 </div>
                 <div className="w-full px-4 sm:w-1/2 md:w-3/12 lg:w-3/12">
                   <div className="mb-11 footer_col">
-                    <p className="mb-8 text-[22px] font-medium text-black">About Us</p>
+                    <h3 className="mb-8 text-[22px] font-medium text-black">About Us</h3>
                     <ul className="space-y-[10px]">
                       <li>
                         <a href="#" className="inline-block text-base text-slate-400 hover:text-indigo-400">
@@ -73,7 +73,7 @@ function Footer() {
                 </div>
                 <div className="w-full px-4 sm:w-1/2 md:w-3/12 lg:w-3/12">
                   <div className="wow fadeInUp mb-11 footer_col">
-                    <p className="mb-8 text-[22px] font-medium text-black">Resources</p>
+                    <h3 className="mb-8 text-[22px] font-medium text-black">Resources</h3>
                     <ul className="space-y-[10px]">
                       <li>
                         <a href="#" className="inline-block text-base text-slate-400 hover:text-indigo-400">
@@ -100,7 +100,7 @@ function Footer() {
                 </div>
                 <div className="w-full px-4 sm:w-1/2 md:w-4/12 lg:w-4/12">
                   <div className="mb-11 footer_col">
-                    <p className="mb-8 text-[22px] font-medium text-black">Tutorial</p>
+                    <h3 className="mb-8 text-[22px] font-medium text-black">Tutorial</h3>
                     <ul className="space-y-[10px]">
                       <li>
                         <a href="#" className="inline-block text-base text-slate-400 hover:text-indigo-400">
