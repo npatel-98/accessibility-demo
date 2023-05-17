@@ -67,7 +67,6 @@ const Accordion = () => {
                     "max-h-72 shown transition ease-in-out delay-500 duration-500": currentAccordion === index,
                   })}
                   aria-labelledby={`accordion_title_${index}`}
-                  role="tab"
                 >
                   <p>{item.fields.answer}</p>
                 </div>

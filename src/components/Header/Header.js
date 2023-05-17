@@ -15,7 +15,6 @@ const Header = () => {
 
                 <div className="header__wrapper container mx-auto flex flex-row justify-between items-center flex-wrap">
                     <Link
-                        role="button"
                         to="/"
                         tabIndex="0"
                     >

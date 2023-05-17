@@ -9,13 +9,11 @@ const Dropdown = ({ submenus,dropdown ,vv}) => {
           'block rounded-lg p-2 shadow-xl shadow-stone-700 border-2 border-white-600 divide-y divide-slate-200': dropdown,
         })}
         ref={vv}
-        role="listbox"
         aria-label='Tab dropdown'
       >
         {submenus.map((submenu, index) => (
           <li 
-          key={index} 
-          role="list" 
+          key={index}
           className="rounded-t py-2 px-4 block whitespace-no-wrap hover:bg-gray-100 focus:bg-gray-100 hover:text-indigo-500 focus:text-indigo-500">
             
             <a href={submenu.url} className="hover:bg-gray-100 hover:text-indigo-500 focus:text-indigo-500 focus:bg-gray-100">{submenu.title}</a>

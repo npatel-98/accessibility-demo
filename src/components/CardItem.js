@@ -2,7 +2,7 @@ import React from 'react'
 
 function CardItem() {
   return (
-    <div className='mx-4 lg:mx-0 col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-4 max-w-lg rounded overflow-hidden shadow-lg' tabIndex='0'>
+    <div className='mx-4 lg:mx-0 col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-4 max-w-lg rounded overflow-hidden shadow-lg'>
       <img src="https://appline-tailwind.preview.uideck.com/images/blog-01.jpg" alt='Sunset in the mountains' className='w-full rounded' />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
