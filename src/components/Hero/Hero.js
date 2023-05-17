@@ -5,7 +5,7 @@ const Hero = () => {
     title: "Workshop",
     name: "Accessibility: The main pillar",
     info: "Welcome and let's deep dive into the ocean of accessibilitly",
-    link: "/list",
+    link: "/explore",
   };
   return (
     <Layout>
