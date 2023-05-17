@@ -1,6 +1,7 @@
 
 import { Outlet, Link } from "react-router-dom";
-import HeaderLogo from "../../images/HZTL_grey_workshop.png";
+// import HeaderLogo from "../../images/HZTL_grey_workshop.png";
+import HeaderLogo from "../../images/site_logo.png";
 import Navbar from "../Navbar";
 
 const Header = () => {

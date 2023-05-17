@@ -16,7 +16,7 @@ const Hero = () => {
               <h1 className="text-3xl md:text-5xl p-2 text-yellow-300 tracking-loose">{DATA.title}</h1>
               <h2 className="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2">{DATA.name}</h2>
               <p className="text-sm md:text-base text-gray-50 mb-4">{DATA.info}</p>
-              <a href={DATA.link} className="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent hover:cursor-pointer">
+              <a href={DATA.link} className="bg-transparent hover:bg-yellow-300 focus:bg-yellow-300 text-yellow-300 hover:text-black focus:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent focus:border-transparent hover:cursor-pointer">
                 Explore Now
               </a>
             </div>

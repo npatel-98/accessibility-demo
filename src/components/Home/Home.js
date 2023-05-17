@@ -68,7 +68,7 @@ const Dashboard = () => {
               <div className="p-5 pt-2">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-yellow-300 dark:text-white uppercase">{item.title}</h5>
                 <p className="mb-3 font-normal text-white dark:text-gray-400">{item.info}</p>
-                <Link to={item.path} className="inline-flex items-center text-sm font-medium text-center bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent hover:cursor-pointer">
+                <Link to={item.path} className="inline-flex items-center text-sm font-medium text-center bg-transparent hover:bg-yellow-300 focus:bg-yellow-300  text-yellow-300 hover:text-black focus:text-black rounded shadow hover:shadow-lg focus:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent focus:border-transparent hover:cursor-pointer">
                   {item.btnText}
                   {svgComponent}
                 </Link>
