@@ -1,33 +1,9 @@
 import {Splide, SplideSlide} from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import SLIDES_DATA from "../../store/sliderData";
 
 function Slider() {
-  const SLIDES_DATA = [
-    {
-      id: "1",
-      title: "slide 1",
-      src: "https://wallpaperaccess.com/full/441330.jpg",
-      alt: "sd_1",
-    },
-    {
-      id: "2",
-      title: "slide 2",
-      src: "https://www.nasa.gov/sites/default/files/styles/ubernode_alt_horiz/public/thumbnails/image/transp_img0056_small.jpg",
-      alt: "sd_2",
-    },
-    {
-      id: "3",
-      title: "slide 3",
-      src: "https://www.nasa.gov/sites/default/files/styles/ubernode_alt_horiz/public/thumbnails/image/70hc958_banner.jpg",
-      alt: "sd_3",
-    },
-    {
-      id: "4",
-      title: "slide 4",
-      src: "https://www.nasa.gov/sites/default/files/styles/ubernode_alt_horiz/public/thumbnails/image/1es_agn_aurore.jpg",
-      alt: "sd_4",
-    },
-  ];
+  
   const options = {
     perPage: 2,
     perMove: 1,
@@ -35,6 +11,7 @@ function Slider() {
     gap: 15,
     padding: {left: 10, right: 10},
   };
+  
   return (
     <>
       <div className=" border-b-primary border-black dark:border-gray dark:border-b-primary rounded list-none box-content container mx-auto mb-20">
