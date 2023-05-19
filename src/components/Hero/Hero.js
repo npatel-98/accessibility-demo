@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../Layout/Layout";
 const Hero = () => {
+  const titlePage = "Welcome to Accessibility Workshop";
   const DATA = {
     title: "Workshop",
     name: "Accessibility: The main pillar",
@@ -8,7 +9,7 @@ const Hero = () => {
     link: "/explore",
   };
   return (
-    <Layout>
+    <Layout pageName={titlePage}>
       <section>
         <div className="bg-black text-white py-20 h-screen">
           <div className="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">

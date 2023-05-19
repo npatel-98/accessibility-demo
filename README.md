@@ -1,11 +1,28 @@
-# Getting Started with Create React App
+# Getting Started with Accessibility Project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Installation Steps
+
+In the project directory, go through this steps to run this project repo:
+
+### `node -v`
+1. Firstly check your node JS version `node -v` command in the integrated terminal.
+
+2. If you're not able to see a specific version, download Node JS on your local. [Checkout the Node JS](https://nodejs.org/en/download) and download as per your local environment.
+
+### `nvm use 16`
+3. After downloading, again check your version and if version is less that 16, please upgrade it to 16 using `nvm use 16`. Without version 16, the project would not run properly.
+
+### `npm install`
+4. Now with Node version 16 running, hit the `npm install` command to install the dependencies on your local.
+
+### `npm start`
+5. After the installation, run the `npm start` OR `npm run start` command to run the project on your localhost.
 
 ## Available Scripts
 
 In the project directory, you can run:
-
 ### `npm start`
 
 Runs the app in the development mode.\

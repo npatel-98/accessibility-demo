@@ -1,55 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 // import {useNavigate} from 'react-router-dom';
-
+import menuItems from '../store/menuList';
 import MenuItems from './MenuItems';
-export const menuItems = [
-    {
-        title: 'Tabs',
-        url: '/tabs',
-        submenu: [
-            {
-                title: 'Web design',
-                url: '#',
-            },
-            {
-                title: 'Web development',
-                url: '#',
-            },
-            {
-                title: 'SEO',
-                url: '#',
-            },
-        ],
-    },
-    {
-        title: 'Home',
-        url: '/',
-    },
-    {
-        title: 'Explore',
-        url: '/explore',
-    },
-    {
-        title: 'Gallery',
-        url: '/gallery',
-    },
-    {
-        title: 'FAQs',
-        url: '/faq',
-    },
-    {
-        title: 'Contact Us',
-        url: '/contact',
-    },
-    {
-        title: 'Data',
-        url: '/table',
-    },
-    {
-        title: 'All at Glance',
-        url: '/all-at-glance',
-    }
-];
 
 function Navbar() {
 
@@ -65,6 +17,7 @@ function Navbar() {
     //     >
     //     Back
     // </button>
+
     return (
         <>
             <nav>
