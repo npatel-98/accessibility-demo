@@ -31,9 +31,7 @@ const MenuItems = ({ items }) => {
                     <div className='dropdown relative text-neutral-900 hover:text-indigo-400 flex flex-row items-center'>
                         <Link 
                             type="button" 
-                            aria-haspopup="menu"
                             className="mx-4 mr-2 text-lg font-bold whitespace-nowrap focus:text-indigo-400 relative"
-                            aria-expanded={dropdown ? "true" : "false"}
                             onClick={() => setDropdown((prev) => !prev)}
                         >
                             {items.title}

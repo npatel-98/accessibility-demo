@@ -17,41 +17,38 @@ function Form() {
               <div className="-mx-[22px] flex flex-wrap">
                 <div className="w-full px-[22px] md:w-1/2">
                   <div className="mb-8 relative">
-                    <label htmlFor="name" className=" absolute -top-3 bg-white px-2 text-gray-500 font-semibold left-6">
-                      Full Name
-                    </label>
                     <input type="text" name="name" id="name" placeholder="Enter your name" className="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-body outline-none focus:border-blue-400 " />
                   </div>
                 </div>
                 <div className="w-full px-[22px] md:w-1/2">
                   <div className="mb-8 relative">
-                    <label htmlFor="company" className=" absolute -top-3 bg-white px-2 text-gray-500 font-semibold left-6">
+                    {/* <label htmlFor="company" className=" absolute -top-3 bg-white px-2 text-gray-500 font-semibold left-6">
                       Company Name
-                    </label>
-                    <input type="text" name="company" id="company" placeholder="Company (optional)" className="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-body outline-none focus:border-blue-400" />
+                    </label> */}
+                    <input type="text" name="company" id="name" placeholder="Company (optional)" className="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-body outline-none focus:border-blue-400" />
                   </div>
                 </div>
                 <div className="w-full px-[22px] md:w-1/2">
                   <div className="mb-8 relative">
-                    <label htmlFor="email" className=" absolute -top-3 bg-white px-2 text-gray-500 font-semibold left-6">
+                    {/* <label htmlFor="email" className=" absolute -top-3 bg-white px-2 text-gray-500 font-semibold left-6">
                       Email
-                    </label>
+                    </label> */}
                     <input type="email" name="email" id="email" placeholder="Enter Your email" className="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-body outline-none focus:border-blue-400" />
                   </div>
                 </div>
                 <div className="w-full px-[22px] md:w-1/2">
                   <div className="mb-8 relative">
-                    <label htmlFor="phone" className=" absolute -top-3 bg-white px-2 text-gray-500 font-semibold left-6">
+                    {/* <label htmlFor="phone" className=" absolute -top-3 bg-white px-2 text-gray-500 font-semibold left-6">
                       Phone Number
-                    </label>
+                    </label> */}
                     <input type="number" name="phone" id="phone" placeholder="Enter Your Phone Number" className="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-body outline-none focus:border-blue-400" />
                   </div>
                 </div>
                 <div className="w-full px-[22px]">
                   <div className="mb-8 relative">
-                    <label htmlFor="message" className=" absolute -top-3 bg-white px-2 text-gray-500 font-semibold left-6">
+                    {/* <label htmlFor="message" className=" absolute -top-3 bg-white px-2 text-gray-500 font-semibold left-6">
                       Message
-                    </label>
+                    </label> */}
                     <textarea rows="6" name="message" id="message" placeholder="Tell us about yourself" className="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-body outline-none focus:border-blue-400"></textarea>
                   </div>
                 </div>

@@ -23,11 +23,11 @@ const Accordion = () => {
         </div>
 
         {/* Accordion Wrapper */}
-        <ul className="accordion__wrapper w-9/12 center flex flex-col justify-between items-center rounded-lg p-2 shadow-md shadow-stone-700 border-t-2 py-4 box-shadow-md-top-bottom">
+        <div className="accordion__wrapper w-9/12 center flex flex-col justify-between items-center rounded-lg p-2 shadow-md shadow-stone-700 border-t-2 py-4 box-shadow-md-top-bottom">
           {DATA.map((item, index) => {
             return (
               <li className="accordions w-full border-b-2 border-white-300 divide-y-2 divide-slate-200 last:border-b-0" key={index}>
-                <div onClick={() => toggleClick(index)} className={className("accordion flex flex-row justify-between w-full p-4 text-md font-bold")} aria-labelledby={`accordion_title_${index}`}>
+                <div onClick={() => toggleClick(index)} className={className("accordion flex flex-row justify-between w-full p-4 text-md font-bold")} >
                   <p id={`accordion_title_${index}`} >
                     {item?.fields?.question?.value}
                   </p>
@@ -49,7 +49,7 @@ const Accordion = () => {
               </li>
             );
           })}
-        </ul>
+        </div>
       </div>
     </>
   );

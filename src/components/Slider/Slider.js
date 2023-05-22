@@ -14,7 +14,7 @@ const Slider = () => {
   return (
     <>
       <div className=" border-b-primary border-black dark:border-gray dark:border-b-primary rounded list-none box-content container mx-auto mb-20">
-        <Splide aria-label="My Favorite Images" className="splide__wrapper px-3 md:px-12" options={options}>
+        <Splide className="splide__wrapper px-3 md:px-12" options={options}>
           {SLIDES_DATA.map((slider, index) => {
             return (
               <SplideSlide className="image__wrapper -webkit-text-center text-center object-contain" key={index}>
