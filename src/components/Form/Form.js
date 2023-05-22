@@ -26,9 +26,9 @@ function Form() {
                 <div className="w-full px-[22px] md:w-1/2">
                   <div className="mb-8 relative">
                     <label htmlFor="company" className=" absolute -top-3 bg-white px-2 text-gray-500 font-semibold left-6">
-                      Comapy Name
+                      Company Name
                     </label>
-                    <input type="text" name="company" id="company" placeholder="Comapy (optioanl)" className="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-body outline-none focus:border-blue-400" />
+                    <input type="text" name="company" id="company" placeholder="Company (optional)" className="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-body outline-none focus:border-blue-400" />
                   </div>
                 </div>
                 <div className="w-full px-[22px] md:w-1/2">
@@ -44,7 +44,7 @@ function Form() {
                     <label htmlFor="phone" className=" absolute -top-3 bg-white px-2 text-gray-500 font-semibold left-6">
                       Phone Number
                     </label>
-                    <input type="number" name="phone" id="phone" placeholder="Enter ypur Phone Number" className="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-body outline-none focus:border-blue-400" />
+                    <input type="number" name="phone" id="phone" placeholder="Enter Your Phone Number" className="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-body outline-none focus:border-blue-400" />
                   </div>
                 </div>
                 <div className="w-full px-[22px]">
@@ -58,7 +58,7 @@ function Form() {
                 <div className="w-full px-[22px]">
                   <div className="text-center">
                     <p className="mb-5 text-center text-base text-body">By clicking contact us button, you agree our terms and policy,</p>
-                    <button type="submit" className="inline-block rounded-md bg-indigo-400 py-[14px] px-11 text-base font-medium text-white hover:bg-indigo-300 focus:border-blue-400">
+                    <button type="submit" className="inline-block rounded-md bg-indigo-400 py-[14px] px-11 text-base font-medium text-white hover:bg-indigo-700 focus:bg-indigo-700 focus:border-blue-700">
                       Contact Us
                     </button>
                   </div>

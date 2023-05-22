@@ -16,7 +16,7 @@ const Header = () => {
                 <div className="header__wrapper container mx-auto flex flex-row justify-between items-center flex-wrap">
                     <Link
                         to="/"
-                        tabIndex="0"
+                        // tabIndex="0"
                     >
                         <img src={HeaderLogo} height={180} width={160} className=" fill-black cursor-pointer" alt='navigation logo' objectfit="cover"/>
                     </Link>

@@ -18,7 +18,7 @@ const Slider = () => {
           {SLIDES_DATA.map((slider, index) => {
             return (
               <SplideSlide className="image__wrapper -webkit-text-center text-center object-contain" key={index}>
-                <img className="pt-2  w-full h-full" src={slider.src} alt={slider.alt} />
+                <img className="pt-2  w-full h-full" src={slider.src} />
               </SplideSlide>
             );
           })}

@@ -27,10 +27,13 @@ const Accordion = () => {
           {DATA.map((item, index) => {
             return (
               <li className="accordions w-full border-b-2 border-white-300 divide-y-2 divide-slate-200 last:border-b-0" key={index}>
-                <div onClick={() => toggleClick(index)} className={className("accordion flex flex-row justify-between w-full p-4 text-md font-bold")} id={`accordion_title_${index}`}>
-                  {item?.fields?.question?.value}
+                <div onClick={() => toggleClick(index)} className={className("accordion flex flex-row justify-between w-full p-4 text-md font-bold")} aria-labelledby={`accordion_title_${index}`}>
+                  <p id={`accordion_title_${index}`} >
+                    {item?.fields?.question?.value}
+                  </p>
                   {/* svg to place here */}
-                  <button className=" text-2xl " type="button">
+                  <button className="text-2xl" type="button" 
+                  >
                     {currentAccordion === index ? " - " : " + "}
                   </button>
                 </div>
@@ -40,7 +43,6 @@ const Accordion = () => {
                     "max-h-none hidden": currentAccordion !== index,
                     "max-h-72 shown transition ease-in-out delay-500 duration-500": currentAccordion === index,
                   })}
-                  aria-labelledby={`accordion_title_${index}`}
                 >
                   <p>{item.fields.answer}</p>
                 </div>

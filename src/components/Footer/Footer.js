@@ -128,7 +128,10 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div tabIndex="-1" id="example-footer" className="text-center">
+          <div 
+            // tabIndex="-1" 
+            id="example-footer" className="text-center"
+          >
             &copy; 2021 Site Name
           </div>
         </div>

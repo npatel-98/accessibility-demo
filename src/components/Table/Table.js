@@ -4,30 +4,31 @@ const Table = () => {
 
   return (
     <>
-      <div className="container mx-auto">
+      <div className="container mx-auto"
+        >
         <table className="table-auto w-full text-center border border-slate-400 border-separate border-spacing-0.5">
-          <caption className="my-10 text-4xl">Horizontal Front End Department</caption>
+          {/* <caption className="my-10 text-4xl">Horizontal Front End Department</caption> */}
 
           {/* Correct Approach: */}
 
           {/* <thead>
                 <tr className="bg-cyan-400 text-2xl">
-                    <th className="border border-slate-300">ID</th>
-                    <th className="border border-slate-300">Name</th>
-                    <th className="border border-slate-300">Role</th>
-                    <th className="border border-slate-300">Project</th>
-                    <th className="border border-slate-300">Allocation</th>
+                    <th scope="row" className="border border-slate-300">ID</th>
+                    <th scope="row" className="border border-slate-300">Name</th>
+                    <th scope="row" className="border border-slate-300">Role</th>
+                    <th scope="row" className="border border-slate-300">Project</th>
+                    <th scope="row" className="border border-slate-300">Allocation</th>
                 </tr>
             </thead> */}
 
           <tbody className="bg-cyan-100 text-lg">
             {/* Wrong Approach */}
             <tr className="bg-cyan-400 text-2xl">
-              <th>ID</th>
-              <th>Name</th>
-              <th>Role</th>
-              <th>Project</th>
-              <th>Allocation</th>
+              <td>ID</td>
+              <td>Name</td>
+              <td>Role</td>
+              <td>Project</td>
+              <td>Allocation</td>
             </tr>
 
             {EMP_DATA.map((emp, index) => {
