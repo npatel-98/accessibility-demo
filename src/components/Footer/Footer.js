@@ -77,7 +77,7 @@ function Footer() {
                     <div className="space-y-[10px] list-none">
                       <li>
                         <a href="#" className="inline-block text-base text-slate-400 hover:text-indigo-400">
-                          Andy Guide
+                          Handy Guide
                         </a>
                       </li>
                       <li>
